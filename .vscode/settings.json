@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/d9774787-c207-498f-831c-900ea05db334/AppServices/subscriptions/d9774787-c207-498f-831c-900ea05db334/resourceGroups/foi-rus/providers/Microsoft.Web/sites/foi-rus-22-1",
+    "appService.deploySubpath": "."
+}
