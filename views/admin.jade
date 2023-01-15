@@ -16,6 +16,8 @@ html(lang="en")
                     th Name 
                     th Sentiment 
             tbody 
-                tr: td 1
-                    td Soba 1
-                    td 6.3
+                each item in data
+                    tr: td=item.DeviceId
+                        td=item.Temperature
+                        td 6.3
+        div=msg

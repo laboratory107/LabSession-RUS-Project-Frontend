@@ -4,6 +4,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/stylesheets/style.css')
         title Users
     body 
         a(href="/") 
@@ -18,9 +19,10 @@ html(lang="en")
                     th Humidity 
                     th Illumination 
             tbody 
-                tr: td 1
-                    td 1.1.2023.
-                    td 2.1
-                    td 6.3
-                    td 55
-                    td 2
+                each item, index in measurements
+                    tr: td 1
+                        td=sentiment[index].DateTime
+                        td=sentiment[index].Status
+                        td=item.Temperature
+                        td=item.Humidity
+                        td=item.Luminance
