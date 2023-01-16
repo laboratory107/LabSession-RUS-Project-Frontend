@@ -23,6 +23,6 @@ html(lang="en")
                     tr: td 1
                         td=sentiment[index].DateTime
                         td=sentiment[index].Status
-                        td=item.Temperature
-                        td=item.Humidity
+                        td=Math.round(item.Temperature)
+                        td=Math.round(item.Humidity)
                         td=item.Luminance

@@ -12,12 +12,12 @@ html(lang="en")
         br
         table
             thead 
-                tr: th id
+                tr: th ID
                     th Name 
                     th Sentiment 
             tbody 
-                each item in data
-                    tr: td=item.DeviceId
-                        td=item.Temperature
-                        td 6.3
+                each item, index in devices
+                    tr: td=item.DeviceID
+                        td=item.DeviceName
+                        td=sentiment[index].AvgSentiment
         div=msg
